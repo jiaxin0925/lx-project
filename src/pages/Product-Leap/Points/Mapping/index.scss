@@ -1,0 +1,59 @@
+@import '../../../../assets/sass/custom';
+.leapsUpload_product{
+  display: flex;
+  position: relative;
+  .leaps-Upload{
+    .ant-form{
+      display: flex;
+      .ant-row{
+        display: flex;
+      }
+      .ant-btn{
+        margin-left: 30px;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .ant-table {
+    margin: -27px !important;
+  }
+
+  .ant-table-pagination.ant-pagination {
+    margin: 35px 0;
+  }
+  .option{
+    display: flex;
+    flex-direction: column;
+    label{
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+  }
+}
+.ant-upload-list{
+  .ant-progress-outer{
+    display: none !important;
+  }
+}
+.ant-upload-list-item{
+  margin-top: 20px;
+}
+.tagMark{
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background: transparent;
+  left: -350px;
+  top: -35px;
+}
+.ant-upload-list-text{
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.CancelBtn{
+  position: absolute;
+  top: 125px;
+  left: 240px;
+}

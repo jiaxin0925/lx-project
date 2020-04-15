@@ -1,0 +1,34 @@
+node{
+
+    stage("Checkout code"){
+        checkout scm
+    }
+
+    def slave_instance = docker.image('jenkins_slave_node')
+
+    slave_instance.inside('') {
+        stage("Build npm"){
+            sh 'npm install'
+            sh 'npm run build-package'
+        }
+    }
+
+    stage("Build with Tar") {
+        sh 'cp nginx.conf dist/nginx.conf'
+        sh 'cd dist && rm -rf dist.tar && tar -cvf dist.tar *'
+        archiveArtifacts 'dist/dist.tar'
+    }
+
+    stage('Deploy to Earth PaaS'){
+        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'Jenkins_CI',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+             sh ' python /var/jenkins_home/its_tools/earth-cli-python/earth-cli.py \
+             -u $USERNAME \
+             -p $PASSWORD \
+             -d \
+             -a dist/dist.tar \
+             -s 5309 \
+             --desc "Auto deployment: jenkins build:${BUILD_URL}" '
+        }
+    }
+
+}

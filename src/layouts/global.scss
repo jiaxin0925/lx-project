@@ -1,0 +1,506 @@
+@import '../assets/sass/custom.scss';
+.header{
+  padding: 0 !important;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background:rgba(255,255,255,1) !important;
+  box-shadow:0px 5px 5px 0px rgba(0,0,0,0.05);
+  display: flex;
+  .left-img{
+    width: 180px;
+    height: 60px;
+    background: url('../assets/images/Logo.png');
+  }
+  .right-title{
+    margin-left: 16px;
+    >p{
+      width:463px;
+      height:100%;
+      font-size:24px;
+      // font-family:Lato;
+      font-weight:400;
+      color:rgba(51,63,72,1);
+      line-height:60px;
+      letter-spacing:2px;
+    }
+  }
+  .My{
+    min-width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    // background: #46C8E1;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    >span{
+      font-size: 16px;
+      color: #999;
+    }
+  }
+}
+
+.ant-layout-sider{
+  position: relative;
+  width:303px;
+  // height:432px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 1px 5px -1px rgba(13,1,1,0.5);
+  border:1px solid rgba(239,239,239,1);
+  ul{
+    background: rgba(255,255,255,1);
+    li{
+      color:rgba(51,63,72,1);
+      font-size:16px;
+      // font-family:Lato;
+      font-weight:bold;
+      color:rgba(51,63,72,1);
+      span{
+        a{
+          color:rgba(51,63,72,1);
+        }
+      }
+    }
+  }
+}
+.trigger-box{
+  width: 24px;
+  height: 100%;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 1px 5px -1px rgba(13,1,1,0.5);
+  border:1px solid rgba(239,239,239,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -2px;
+  top: 0;
+}
+.trigger-box:hover{
+  color: #1890ff;
+}
+.trigger {
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+.content{
+  width: 80%;
+  margin-left: 40px !important;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 1px 5px -1px rgba(13,1,1,0.5);
+  border:1px solid rgba(239,239,239,1);
+  .ant-layout-content{
+    padding: 10px !important;
+    min-height: 0 !important;
+    height:100%;
+  }
+}
+
+.footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 328px;
+  margin-top: 80px;
+  .footer-top{
+    height: 280px;
+    background:rgba(0,0,0,1);
+    display: flex;
+    ul{
+      width: 350px;
+      margin-top: 30px;
+      li{
+        color: #999;
+        list-style:none;
+        margin-bottom: 21px;
+        &:nth-of-type(1){
+          font-size:12px;
+          font-family:Lato;
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          line-height:16px;
+          letter-spacing:2px;
+        }
+      }
+      &:nth-of-type(1){
+        margin-left: 156px;
+        li:nth-of-type(3){
+          width: 120px;
+          height: 67px;
+          background: url('../assets/images/Tweet Photo.png');
+        }
+      }
+      &:nth-of-type(2){
+        margin-left: 30px;
+      }
+      &:nth-of-type(3){
+        margin-left: 30px;
+        li:nth-of-type(4){
+          span:nth-of-type(1){
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/images/Facebook.png') center no-repeat;
+            margin-right: 24px;
+            border: 1px dashed grey;
+          }
+          span:nth-of-type(2){
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/images/Twitter.png') no-repeat;
+            margin-right: 24px;
+            border: 1px dashed grey;
+          }
+          span:nth-of-type(3){
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/images/Youtube.png') no-repeat;
+            margin-right: 24px;
+            border: 1px dashed grey;
+          }
+          span:nth-of-type(4){
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/images/Linkedin.png') no-repeat;
+            margin-right: 24px;
+            border: 1px dashed grey;
+          }
+        }
+      }
+    }
+
+  }
+  .footer-bottom{
+    height:48px;
+    background:rgba(51,63,72,1);
+    padding: 0 156px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer-bottom-left{
+      ul{
+        display: flex;
+        align-items: center;
+        li{
+          margin-right: 30px;
+          list-style:none;
+          font-size:12px;
+          font-family:Lato;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+    .footer-bottom-right{
+      display: flex;
+      align-items: center;
+      >div{
+        font-size:12px;
+        font-family:Lato;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        display: flex;
+        span{
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url('../assets/images/Flag - Hong Kong.png');
+          margin-right: 6px;
+          margin-top: 2px;
+          border: 1px grey dashed;
+        }
+      }
+      i{
+        width:1px;
+        height:18px;
+        background:rgba(111,113,112,1);
+        margin: 0 16px;
+      }
+      span{
+        font-size:12px;
+        font-family:Lato;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+      }
+    }
+  }
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+ul,li,ol,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+  list-style: outside none;
+}
+.normal {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.dpc_container {
+  padding: 0px 150px 20px 150px;
+  margin: 0 auto;
+  .ant-input-group-addon {
+      .ant-btn-primary {
+          background: $orange;
+          border-color: $orange;
+      }
+  }
+  .ant-input {
+      border-radius: 2px;
+      height: 36px;
+      line-height: 36px;
+  }
+  .ant-select-auto-complete {
+    width: 100%;
+    &.ant-select {
+      .ant-input {
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+  .ant-btn {
+      border-radius: 2px;
+      font-size: 18px;
+      height: 36px;
+      line-height: 36px;
+  }
+}
+
+.layout_header {
+  margin-bottom: 2em;
+}
+
+.ant-layout-sider {
+  min-width: 279px !important;
+}
+.ant-menu-item {
+  height: 56px !important;
+}
+.ant-layout-sider-collapsed {
+  min-width: 80px !important;
+}
+.hide-navigater{
+  position:absolute;
+  top: 40%;
+  margin-top: 70px;
+  transform: rotate(-90deg);
+  -ms-transform:rotate(-90deg); 	/* IE 9 */
+  -moz-transform:rotate(-90deg); 	/* Firefox */
+  -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+  -o-transform:rotate(-90deg); 
+  white-space: nowrap;
+  cursor: pointer;
+}
+.trigger-box .anticon svg{
+  position: absolute;
+  top:40%;
+}
+
+.ant-modal-content .ant-modal-footer{
+  background:rgba(246,246,246,1);
+}
+.ant-modal-footer .ant-btn:nth-child(1){
+  border:none;
+  background:rgba(246,246,246,1);
+  color:#1890ff;
+}
+.ant-modal-footer .ant-btn{
+  padding:0 25px;
+}
+
+html{
+  min-width: 1200px;
+  overflow-x: auto !important;
+}
+.is-login{
+  display: none !important;
+}
+.login-div{
+  width:100%;
+  height:calc(100%);
+  display: flex;
+  opacity: 1;
+  .login-left{
+    width: 66.7%;
+    height:100%;
+    // background: url('../assets/login/login-bg.png') no-repeat 100% 100%/100% 100%;
+    position: relative;
+    .login-footer{
+      position: absolute;
+      left:0;
+      bottom: 48px;
+      height:48px;
+      width:100%;
+      background:rgba(0,0,0,1);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul{
+        display: flex;
+        align-items: center;
+        li{
+          margin-right: 30px;
+          list-style:none;
+          font-size:12px;
+          font-family:Lato;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+        }
+      }
+      div{
+        span:nth-of-type(1){
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url('../assets/images/Facebook.png') center no-repeat;
+          margin-right: 24px;
+          border: 1px dashed grey;
+        }
+        span:nth-of-type(2){
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url('../assets/images/Twitter.png') no-repeat;
+          margin-right: 24px;
+          border: 1px dashed grey;
+        }
+        span:nth-of-type(3){
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url('../assets/images/Youtube.png') no-repeat;
+          margin-right: 24px;
+          border: 1px dashed grey;
+        }
+        span:nth-of-type(4){
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url('../assets/images/Linkedin.png') no-repeat;
+          margin-right: 24px;
+          border: 1px dashed grey;
+        }
+      }
+    }
+    .footer-bottom{
+      position: absolute;
+      left:0;
+      bottom: 0px;
+      height:48px;
+      width:100%;
+      background:rgba(51,63,72,1);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .footer-bottom-left{
+        ul{
+          display: flex;
+          align-items: center;
+          li{
+            margin-right: 30px;
+            list-style:none;
+            font-size:12px;
+            font-family:Lato;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+          }
+        }
+      }
+      .footer-bottom-right{
+        display: flex;
+        align-items: center;
+        >div{
+          font-size:12px;
+          font-family:Lato;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          display: flex;
+          span{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/images/Flag - Hong Kong.png');
+            margin-right: 6px;
+            margin-top: 2px;
+            border: 1px grey dashed;
+          }
+        }
+        i{
+          width:1px;
+          height:18px;
+          background:rgba(111,113,112,1);
+          margin: 0 16px;
+        }
+        span{
+          font-size:12px;
+          font-family:Lato;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+  .login-right{
+    width: 33.3%;
+    height:100%;
+    padding:9% 80px;
+    box-sizing: border-box;
+    background: #fff;
+    p{
+      font-size: 24px;
+      color: #333F48;
+      line-height: 50px;
+    }
+  }
+}
+.all-bg{
+  background: url('../assets/login/login-bg.png') no-repeat 100% 100%/100% 100% !important;
+}
+.example{
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  width:100%;
+  height:100%;
+  z-index: 1;
+}
+.example .spin-load{
+  position: relative;
+  top:50%;
+  margin-top: -30px;
+}
+

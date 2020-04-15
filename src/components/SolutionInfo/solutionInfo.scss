@@ -1,0 +1,23 @@
+.service_foot{
+    padding:15px 20px;
+    background: #f2f2f2;
+    margin-top:2em;
+    .foot_title{
+        font-size:24px;
+        color: #333;
+    }
+    .foot_content{
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .foot_btn{
+        padding:0px 28px;
+        height: 38px;
+        background: #ef732e;
+        border: 1px solid #ef732e;
+        color:#fff;
+        margin-top:20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}

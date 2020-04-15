@@ -1,0 +1,28 @@
+.navigator {
+  a {
+    color:white;
+    font-size: 14px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+  background: #EFF6FF;
+}
+
+.ant-layout-sider ul li.ant-menu-item-selected span a {
+  color:#3E8DDD;
+}
+
+.ant-menu-dark .anticon {
+  color:black;
+}
+
+.ant-menu-dark .ant-menu-item-selected .anticon {
+  color:#3E8DDD;
+}
+
+.ant-menu-dark .ant-menu-item {
+  line-height: 56px;
+}

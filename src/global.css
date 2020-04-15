@@ -1,0 +1,11 @@
+
+html, body, #root {
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  font-family: Lato Regular,PingFang SC,Helvetica,Arial,Helvetica Neue,Microsoft YaHei,微软雅黑,sans-serif,Meiryo,MS Gothic;
+}
+
+body {
+  margin: 0;
+}
